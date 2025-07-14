@@ -7,14 +7,18 @@ interface Props {
 
 export default function MessageBubble({ message }: Props) {
   const isUser = message.sender === 'user';
+
   return (
     <div
       className={clsx(
         'max-w-xs px-3 py-2 rounded-2xl shadow',
-        isUser ? 'bg-blue-500 text-white self-end' : 'bg-gray-200 self-start',
+        isUser ? 'bg-blue-500 text-white self-end' : 'bg-gray-200 self-start'
       )}
     >
-      {message.text}
+      <span className="flex items-center">
+        {!isUser && <span className="mr-1">🤖</span>}
+        {message.text}
+      </span>
     </div>
   );
 }

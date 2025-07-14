@@ -1,4 +1,4 @@
-import type { ChatRepository } from '../infrastructure/repositories/ChatRepository';
+import type { ChatRepository } from '../domain/repositories/ChatRepository';
 import type { Message } from '../domain/entities/Message';
 
 export class SendMessageUseCase {

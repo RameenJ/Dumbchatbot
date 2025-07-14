@@ -1,0 +1,22 @@
+.chat-container {
+  display: flex;
+  background-color: #1a1a1a;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;      /* full screen height */
+  background-color: #0e3887; /* optional: light gray */
+  padding: 1rem;      /* optional: for responsiveness */
+}
+
+.chat-box {
+  background-color: #1a1a1a;
+  width: 100%;
+  max-width: 400px;
+  height: 600px;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}

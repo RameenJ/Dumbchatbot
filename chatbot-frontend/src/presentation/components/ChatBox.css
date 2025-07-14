@@ -1,0 +1,25 @@
+.chatbox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #1a1a1a;
+
+  /* Scrollbar customization (optional) */
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
